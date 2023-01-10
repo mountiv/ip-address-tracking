@@ -33,4 +33,24 @@
       background-color: $clr-dark-grey;
     }
   }
+
+  @media (max-width: 1000px) {
+    width: 55%;
+  }
+
+  @media (max-width: 600px) {
+    width: 90%;
+
+    &__input {
+      width: 85%;
+
+      &::placeholder {
+        font-size: 1rem;
+      }
+    }
+
+    &__btn {
+      width: 15%;
+    }
+  }
 }
