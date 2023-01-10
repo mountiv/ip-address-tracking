@@ -13,9 +13,16 @@
   z-index: 99999;
   transform: translateX(-50%);
 
-  img {
-    margin: auto;
-    width: 10rem;
+  .fullscreen {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   ul {
@@ -54,5 +61,28 @@
       color: $clr-very-dark-grey;
       line-height: 1.75rem;
     }
+  }
+}
+
+.hidden {
+  animation: opacity 0.3s both ease-in-out;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
